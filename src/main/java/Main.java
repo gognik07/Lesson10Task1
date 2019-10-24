@@ -1,15 +1,7 @@
 import java.sql.*;
-import java.util.TimeZone;
 
 public class Main {
 
-/*
-SELECT Courses.name AS 'Название курса', COUNT(*),
-       CONCAT(MONTHNAME(registration_date), ' ', YEAR(registration_date)) AS 'Дата поступления' FROM Courses
-           JOIN Subscriptions ON Courses.id = Subscriptions.course_id
-           JOIN Students ON Students.id = Subscriptions.student_id
-GROUP BY CONCAT(MONTHNAME(registration_date), ' ', YEAR(registration_date)), Courses.name;
- */
 
     public static void main(String[] args) throws SQLException {
 
